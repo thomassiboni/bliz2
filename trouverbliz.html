@@ -30,7 +30,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="images/blizNoire.jpg" alt="logo bliz" width="50px"></a>
+      <a class="navbar-brand" href="index.html"><img src="images/blizNoire.jpg" alt="logo bliz" width="50px"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,63 +58,55 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-  <div id="wrapper">
-    <h1><img src="images/blizNoire.jpg" alt="logo bliz" width="150"></h1>
-      
-    <h2>Emergency Charger for Smartphones</h2>
-  </div>
-
-
-
-
-<div class="container">
+  <div class="verticalsapce">
+  
+<div class="container space">
   <div class="row">
-    <div class="col-md-6 col-sm-6">
-      <img src="images/6-2.jpg" alt="photo bliz" width="300" class="img-circle"> 
-    </div>
-    <div class="col-md-6 col-sm-6 produit">
-<img src="images/noun_58319_cc.png" width="70px">
-  <p>Bliz est une batterie à <strong> usage unique </strong>
-  </p>
-    </div>
+    <div class="col-xs-12"></div>
   </div>
 </div>
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-6 col-sm-6 produit">
-<img src="images/noun_141006_cc.png" width="70px">
-  <p>Bliz vous permet de gagner jusqu'à <strong>1h30</strong> d'autonomie </p>
+    <div class="col-sm-6">
+      <div id="map" style="width: 100%; height: 400px;"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+  var myLatlng = new google.maps.LatLng(48.8716360,2.3107830);
+  
+
+  var myOptions = {
+      zoom: 14,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: []
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'), myOptions);
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+  });
+</script>
+
+
     </div>
-       <div class="col-md-6 col-sm-6">
-      <img src="images/4.jpg" alt="photo bliz branchée" width="300" class="img-circle">
+ 
+    <div class="col-sm-6">
+      <p>Les planches<p/>
+      <i class="fa fa-map-marker"></i>40, rue du Colisée 75008 Paris
+      <p>Le madam</p>
+      <i class="fa fa-map-marker"></i>128, rue de la Boétie 75008 Paris
     </div>
   </div>
- </div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 col-sm-6">
-      <img src="images/1.jpg" alt="packaging" width="300" class="img-circle">
-    </div>
-     <div class="col-md-6 col-sm-6 produit">
-  <img src="images/noun_138332_cc.png" width="70px">
-    <p>Bliz est présent dans <strong><a>50 points de ventes</a></strong> à Paris</p>
-    </div>
-   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 col-sm-6 produit">
-  <img src="images/noun_211286_cc.png" width="70px">
-  <p>Bliz est utilisable sur <strong>tous les samrtphones</strong> grâce aux plugs <strong>lightening</strong> et <strong>mini-USB</strong></p>
-    </div>
-    <div class="col-md-6 col-sm-6">
-      <img src="images/5.jpg" width="300" class="img-circle">
-    </div>
-  </div>    
-</div>
+
+
+
+
 
 <div id="footer">
 <div class="container">
